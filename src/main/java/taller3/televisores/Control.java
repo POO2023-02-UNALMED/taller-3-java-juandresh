@@ -9,7 +9,7 @@ public class Control {
 		tv.setControl(this);
 	}
 	
-	public void setTv(TV tel) { //Pendiente
+	public void setTv(TV tel) {
 		tv=tel;}
 	public TV getTv() {
 		return tv;}
@@ -34,7 +34,7 @@ public class Control {
 		tv.volumenDown();}
 	
 	public void setCanal (int cambio) {
-		if (cambio>=0 && cambio<=120) {
+		if (cambio>=0 && cambio<=120 &&) {
 			tv.setCanal(cambio);}	
 	}
 	
