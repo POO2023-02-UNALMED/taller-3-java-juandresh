@@ -22,18 +22,18 @@ public class Control {
 		tv.turnOff();}
 	
 	public void canalUp () {
-		if(tv !=null) {
+		if(tv != null) {
 			tv.canalUp();
 		}	
 	}
 	public void canalDown () {
-		if(tv !=null) {
+		if(tv != null) {
 			tv.canalDown();
 		}
 	}
 	
 	public void volumenUp () {
-		if(tv !=null) {
+		if(tv != null) {
 			tv.volumenUp();
 		}
 	}
