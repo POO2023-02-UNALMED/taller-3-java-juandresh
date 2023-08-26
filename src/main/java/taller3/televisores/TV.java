@@ -59,20 +59,20 @@ public class TV {
 	public boolean getEstado() {
 		return estado;}
 	
-	public void volumenUp() {
-		if (estado && volumen<7 && volumen>=0) {
+	public void volumenUp(int volumen) {
+		if (estado && volumen<7) {
 			volumen++;}
 	}
-	public void volumenDown() {
-		if (estado && volumen>0 && volumen<=7) {
+	public void volumenDown(int volumen) {
+		if (estado && volumen>0) {
 			volumen--;}
 	}
-	public void canalUp() {
-		if (estado && canal<120 && canal>=1) {
+	public void canalUp(int canal) {
+		if (estado && canal<120) {
 			canal++;}
 	}
-	public void canalDown() {
-		if (estado && canal>1 && canal<=120) {
+	public void canalDown(int canal) {
+		if (estado && canal>1) {
 			canal--;}
 	}
 }
