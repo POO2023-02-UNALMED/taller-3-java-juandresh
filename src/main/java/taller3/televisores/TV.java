@@ -20,9 +20,8 @@ public class TV {
 	}
 	
 	public void setCanal(int cambio) {
-		if(cambio<=120 && cambio>=0 && estado){
-			canal=cambio;
-		}
+		if(cambio<=120 && cambio>=0 && estado==true){
+			canal=cambio;}
 	}
 	
 	
