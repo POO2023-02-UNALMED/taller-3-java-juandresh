@@ -10,15 +10,14 @@ public class TV {
 	private Control control;
 	private static int numTV=0;
 	
-	
-	public TV(Marca tag, boolean status){
-		marca=tag;
-		estado=status;}
-	
-	public TV(int canal, int volumen, int precio) {
+	public TV(Marca marca, boolean estado){
+		this.marca=marca;
+		this.estado=estado;
 		this.canal = 1;
 		this.volumen = 1;
-		this.precio = 500;}
+		this.precio = 500;
+		this.control=new Control();
+		numTV++;}
 	
 	
 	public void setCanal(int can) {
@@ -47,13 +46,14 @@ public class TV {
 		return control;}
 	
 	
-	public static void modificar(int valor) {
-		numTV=valor;}
+	public static void modificar(int valor) {}
 	
 	public void turnOn() {
 		estado=true;}
+	
 	public void turnOff() {
 		estado=false;}
+	
 	public boolean getEstado() {
 		return estado;}
 	

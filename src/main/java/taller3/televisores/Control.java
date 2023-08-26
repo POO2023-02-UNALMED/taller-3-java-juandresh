@@ -8,10 +8,10 @@ public class Control {
 	
 	public void enlazar(TV tv) {
 		this.tv=tv;
-		tv.asignarControl(this);
+		tv.setControl(this);
 	}
 	
-	public void setTv(TV tel) {
+	public void setTv(TV tel) { //Pendiente
 		tv=tel;}
 	public TV getTv() {
 		return tv;}

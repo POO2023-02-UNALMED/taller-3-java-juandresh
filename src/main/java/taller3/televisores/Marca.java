@@ -2,15 +2,17 @@ package taller3.televisores;
 
 public class Marca {
 	private String nombre;
-	public Marca(String tag){
-		nombre=tag;
+	public Marca(String nombre){
+		this.nombre=nombre;
 	}
-	public void getNombre (String nam) {
-		nombre=nam;			
-	}
-
-	public String setNombre () {
+	
+	public String getNombre () {
 		return nombre;
 	}
+	
+	public void setNombre (String nombre) {
+		this.nombre=nombre;			
+	}
+
 
 }
