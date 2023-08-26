@@ -45,11 +45,15 @@ public class Control {
 	}
 	
 	public void setCanal (int canal) {
-		tv.setCanal(canal);
-		}	
+		if (tv != null) {
+			tv.setCanal(canal);
+		}
+	}
 	
 	public void setVolumen (int volumen) { 
-		tv.setVolumen(volumen);
+		if (tv != null) {
+			tv.setVolumen(volumen);
 		}
+	}
 	
 }
