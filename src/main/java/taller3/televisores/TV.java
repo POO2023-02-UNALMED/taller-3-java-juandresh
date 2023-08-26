@@ -47,7 +47,30 @@ public class TV {
 		return control;}
 	
 	
-	void modificar(int numTV) {
-		numTV++;
+	public static void modificar(int valor) {
+		numTV=valor;}
+	
+	public void turnOn() {
+		estado=true;}
+	public void turnOff() {
+		estado=false;}
+	public boolean getEstado() {
+		return estado;}
+	
+	public void volumenUp() {
+		if (estado && volumen<7) {
+			volumen++;}
+	}
+	public void volumenDown() {
+		if (estado && volumen>0) {
+			volumen--;}
+	}
+	public void canalUp() {
+		if (estado && canal<120) {
+			canal++;}
+	}
+	public void canalDown() {
+		if (estado && canal>1) {
+			canal--;}
 	}
 }
