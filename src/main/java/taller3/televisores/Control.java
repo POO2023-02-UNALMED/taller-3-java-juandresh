@@ -22,16 +22,27 @@ public class Control {
 		tv.turnOff();}
 	
 	public void canalUp () {
-		tv.canalUp();}
-	
+		if(tv !=null) {
+			tv.canalUp();
+		}	
+	}
 	public void canalDown () {
-		tv.canalDown();}
+		if(tv !=null) {
+			tv.canalDown();
+		}
+	}
 	
 	public void volumenUp () {
-		tv.volumenUp();}
+		if(tv !=null) {
+			tv.volumenUp();
+		}
+	}
 	
 	public void volumenDown () {
-		tv.volumenDown();}
+		if(tv !=null) {
+			tv.volumenDown();
+		}
+	}
 	
 	public void setCanal (int canal) {
 		if (canal>=0 && canal<=120) {
