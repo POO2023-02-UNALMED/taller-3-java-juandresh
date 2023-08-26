@@ -34,7 +34,7 @@ public class Control {
 		tv.volumenDown();}
 	
 	public void setCanal (int cambio) {
-		if (cambio>=0 && cambio<=120 &&) {
+		if (cambio>=0 && cambio<=120) {
 			tv.setCanal(cambio);}	
 	}
 	
