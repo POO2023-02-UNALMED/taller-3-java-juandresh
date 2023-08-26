@@ -19,8 +19,11 @@ public class TV {
 		numTV++;
 	}
 	
-	public void setCanal(int canal) {
-		this.canal=canal;}
+	public void setCanal(int cambio) {
+		if(cambio<=120 && cambio>=0 && estado){
+			canal=cambio;
+		}
+	}
 	
 	
 	public int getCanal() {
@@ -41,8 +44,10 @@ public class TV {
 	public int getPrecio() {
 		return precio;}
 	
-	public void setVolumen(int volumen) {
-		this.volumen=volumen;}
+	public void setVolumen(int voln) {
+		if(voln<=7 && voln>=0 && estado) {
+			volumen=voln;}
+	}
 	
 	public int getVolumen() {
 		return volumen;}
