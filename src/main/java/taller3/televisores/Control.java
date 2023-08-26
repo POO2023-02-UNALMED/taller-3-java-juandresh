@@ -33,14 +33,14 @@ public class Control {
 	public void volumenDown () {
 		tv.volumenDown();}
 	
-	public void setCanal (int cambio) {
-		if (cambio>=0 && cambio<=120) {
-			tv.setCanal(cambio);}	
+	public void setCanal (int canal) {
+		if (canal>=0 && canal<=120) {
+			tv.setCanal(canal);}	
 	}
 	
-	public void setVolumen (int nuevo) {
-		if (nuevo>=0 && nuevo<=7) {
-			tv.setVolumen(nuevo);
+	public void setVolumen (int volumen) {
+		if (volumen>=0 && volumen<=7) {
+			tv.setVolumen(volumen);
 		}
 	}
 	
