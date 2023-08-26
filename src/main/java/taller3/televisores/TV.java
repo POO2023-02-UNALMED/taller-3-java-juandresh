@@ -13,24 +13,20 @@ public class TV {
 	public TV(Marca marca, boolean estado){
 		this.marca=marca;
 		this.estado=estado;
-		numTV++;
-	}
-		
-	public TV() {
 		this.canal = 1;
 		this.volumen = 1;
 		this.precio = 500;
+		numTV++;
 	}
-	
 	
 	public void setCanal(int can) {
 		canal=can;}
 	public int getCanal() {
 		return canal;}
 	
-	public void setNumTV(int nume) {
+	public static void setNumTV(int nume) {
 		numTV=nume;}
-	public int getNumTV() {
+	public static int getNumTV() {
 		return numTV;}
 	
 	public void setMarca(Marca tag) {
