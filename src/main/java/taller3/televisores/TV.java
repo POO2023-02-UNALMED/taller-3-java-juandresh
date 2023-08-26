@@ -27,6 +27,11 @@ public class TV {
 	public int getCanal() {
 		return canal;}
 	
+	public void setNumTV(int nume) {
+		numTV=nume;}
+	public int getNumTV() {
+		return numTV;}
+	
 	public void setMarca(Marca tag) {
 		marca=tag;}
 	public Marca getMarca() {
